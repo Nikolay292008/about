@@ -1,7 +1,105 @@
 <!doctype html>
 <html>
   <head>
-    <title></title>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-score=1.0">
+    <title>Визитный сайт Николая Гуляева</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel = "stylesheet" href = "style.css">
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a href = "#home">Главная страница</a>
+        <a href = "#about">Обо мне</a>
+        <a href = "#projects">Проекты</a>
+        <a href = "#contacts">Контакты</a>
+      </nav>
+    </header>
+    
+    <main>
+      <section id = "home" class = "hero">
+        <div class = "logo">NG</div>
+        <div class = "descr">
+          добрый, общительный, отзывчивый человек,<br>
+          который ценит результат и качество 
+        </div>
+        <a href = "#about" class="glow-on-hover">Вперёд</a>
+      </section>
+
+      
+
+      <section id = "about" class = "about">
+        <div class="name_anime">
+          <div class="animate seven">
+            <span>O</span><span>б</span><span></span><span>о</span> &nbsp;
+            <span>м</span><span>н</span><span>е</span>
+          </div>
+        </div>
+        <div class = "cards_grid">
+          <article id = "card_1" class = "card">
+            <p>Меня зовут Николай Гуляев, мне 17 лет, родился и вырос в живописном городе Брянск, расположенном на границе трех стран, что придает особое очарование моему родному краю.</p>
+          </article>
+          <article id = "card_2" class = "card">
+            <p>Прохожу обучение в школе программирования Алгоритмика, моя специализация — frontend-разработка. Осваиваю базовые технологии веб-программирования: HTML, CSS и JavaScript. Frontend-разработка увлекает меня своей креативностью и возможностью создавать много полезного.</p>
+          </article>
+          <article id = "card_3" class = "card">
+            <p>Я занимаюсь каратэ стиля Киокушинкай, достигнув уровня коричневого пояса. Это занятие помогает развивать дисциплину, силу духа и физическую выносливость.</p>
+          </article>
+          <article id = "card_4" class = "card">
+            <p>Обожаю погружаться в мир книг, особенно меня привлекают исторические романы. Это особый жанр литературы, позволяющий отправиться в увлекательное путешествие сквозь века, пережить события прошлого вместе с героями произведений.</p>
+          </article>
+          <article id = "card_5"  class = "card">
+            <p>Я общительный и дружелюбный молодой человек, готовый поддержать разговор на любую тему. Отличаюсь ответственностью и добросовестностью, выполняю задания с полной отдачей и вниманием к деталям.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id = "projects" class = "projects">
+        <div class = "name_anime">
+          <div class="animate seven">
+            <span>м</span><span>о</span><span>и</span> &nbsp;
+            <span>п</span><span>р</span><span>о</span><span>е</span><span>к</span><span>т</span><span>ы</span>
+          </div>
+        </div>
+        <div class = "cards_proj">
+          <article id = "project_1" class = "project">
+            <img src = "img\Travel in comfort.png">
+            <p class ="h">Travel in comfort</p>
+            <p>Travel in comfort — ваш надежный проводник в мир увлекательных путешествий. Данный сайт разработан мной с использованием современных технологий JavaScript, чтобы сделать ваше путешествие незабываемым и простым одновременно.</p>
+          </article>
+          <article id = "project_2" class = "project">
+            <img src = "img\AlgoArch.png">
+            <p class ="h">AlgoArch</p>
+            <p>AlgoArch — создаем дома вашей мечты с заботой и профессионализмом. Сайт разработан мной с использованием HTML и CSS, обеспечивая удобное и приятное взаимодействие с информацией о услугах и проектах.</p>
+          </article>
+          <article id = "project_3" class = "project">
+            <img src = "img\Сайт-визитка.png">
+            <p class ="h">Business Card</p>
+            <p>Этот сайт — моя цифровая визитка. Здесь собрано всё самое важное обо мне и моих проектах. Сайт разработан мной лично с использованием Visual Studio Code, воплощая мои идеи и творческий подход.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id = "contacts">
+        <div class = "name_anime">
+          <div class="animate seven">
+            <span>о</span><span>б</span><span>р</span><span>а</span><span>т</span><span>н</span><span>а</span><span>я</span>&nbsp;
+            <span>с</span><span>в</span><span>я</span><span>з</span><span>ь</span>
+          </div>
+        </div>
+        <ul>
+          <li><a href="tel:+79964474837"><i class="fas fa-phone icon"></i> +7 (996) 447-48-37</a></li>
+          <li><a href="#gulyaevnik29@gmail.com"><i class="fas fa-envelope icon"></i> Отправить письмо</a></li>
+          <li><a href="#https://t.me/gLORD222"><i class="fab fa-telegram-plane icon"></i></a></li>
+          <li><a href="#https://vk.com/nikolaygulyaev8"><i class="fab fa-vk icon"></i> Посмотреть мой профиль</a></li>
+        </ul>
+      </section>
+    </footer>
+
+
+    <script src = "main.js"></script>
+  </body>
 </html>
