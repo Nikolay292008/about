@@ -6,6 +6,35 @@
     <title>Визитный сайт Николая Гуляева</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel = "stylesheet" href = "style.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+      }
+      </script>
+      <style>
+        #home.hero {
+          position: relative;
+          background: #000 !important;
+          overflow: hidden;
+        }
+        #hyperspace-canvas {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          pointer-events: none;
+        }
+        .hero > .logo,
+        .hero > .descr,
+        .hero > .glow-on-hover {
+          position: relative;
+          z-index: 2;
+        }
+      </style>
   </head>
   <body>
     <div class="menu-wrap">
@@ -35,15 +64,18 @@
 
     <main>
       <section id = "home" class = "hero">
+        <div id="hyperspace-canvas"></div>
         <div class = "logo">NG</div>
+        
         <div class = "descr">
-          добрый, общительный, отзывчивый человек,<br>
-          который ценит результат и качество 
+          Frontend-разработчик • Брянск • 17 лет
+          <span class = "tagline">Создаю цифровые миры со скоростью света</span>
         </div>
-        <a href = "#about" class="glow-on-hover">Вперёд</a>
+        <a href = "#about" class="glow-on-hover launch-btn">Вперёд</a>
       </section>
 
-      
+      <!--добрый, общительный, отзывчивый человек,<br>
+          который ценит результат и качество -->
 
       <section id = "about" class = "about">
         <div class="name_anime">
@@ -108,15 +140,16 @@
         </div>
         <ul>
           <li><a href="tel:+79964474837"><i class="fas fa-phone icon"></i></a></li>
-          <li><a href="#gulyaevnik29@gmail.com"><i class="fas fa-envelope icon"></i></a></li>
-          <li><a href="#https://t.me/gLORD222"><i class="fab fa-telegram-plane icon"></i></a></li>
-          <li><a href="#https://vk.com/nikolaygulyaev8"><i class="fab fa-vk icon"></i></a></li>
+          <li><a href="mailto:gulyaevnik29@gmail.com"><i class="fas fa-envelope icon"></i></a></li>
+          <li><a href="https://t.me/gLORD222"><i class="fab fa-telegram-plane icon"></i></a></li>
+          <li><a href="https://vk.com/nikolaygulyaev8"><i class="fab fa-vk icon"></i></a></li>
         </ul>
       </section>
     </footer>
 
 
     <script src = "main.js"></script>
+    <script type="module" src="hyperspace.js"></script>
   </body>
 </html>
 
