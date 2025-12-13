@@ -36,13 +36,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    margin: 10px;
     z-index: 1001;
+    text-shadow:0 0 20px rgb(8, 224, 29);  
 }
   
 .menu-wrap .toggler {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     z-index: 1002;
     cursor: pointer;
     width: 50px;
@@ -631,7 +633,8 @@ footer ul li:nth-child(4) a:before {
     letter-spacing: -10px;
     color: #00ffff;
     text-shadow: 
-    0 0 20px #00ffff,
+    0 0 20px #00ffff,  
+    /*text-shadow: (горизонтальное смещение) (вертикальное смещение) (радиус размытия) (цвет)*/
     0 0 40px #00ffff,
     0 0 80px #0088ff,
     0 0 120px #0044ff;
