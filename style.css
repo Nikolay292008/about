@@ -551,7 +551,7 @@ footer ul li {
 footer ul li a {
     width: 80px;
     height: 80px;
-    background-color: rgb(0, 221, 255);
+    background-color: rgba(4, 0, 255, 0.25);
     text-align: center;
     line-height: 80px;
     font-size: 35px;
@@ -559,19 +559,17 @@ footer ul li a {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 2px solid #fff;
-    color: #262626;
+    border: 2px solid rgb(0, 251, 255);
     transition: all 0.5s ease;
     z-index: 1;
-    box-shadow: 0 2px 30px rgb(0, 251, 255);
+
 }
 
 footer ul li a .icon {
     position: relative;
-    color: #262626;
+    color: #00ff2f;
     transition: color 0.5s ease;
-    z-index: 3;
-    
+    z-index: 3;   
 }
 
 footer ul li a:hover .icon {
@@ -590,25 +588,69 @@ footer ul li a:before {
     z-index: 2;
 }
 
+footer ul li a:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
 footer ul li a:hover:before {
     top: 0;
 }
 
-footer ul li:nth-child(1) a:before {
+.phone:nth-child(1) a:before {
     background: #19a934;
 }
 
-footer ul li:nth-child(2) a:before {
+.email:nth-child(2) a:before {
     background: #d23f1a;
 }
 
-footer ul li:nth-child(3) a:before {
+.tg:nth-child(3) a:before {
     background: #27a7e7;
 }
 
-footer ul li:nth-child(4) a:before {
+.vk:nth-child(4) a:before {
     background: #322db4;
 }
+
+
+
+.cards_contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 20px 20px 30px 20px;
+}
+
+.contact {
+    padding: 28px;
+    background: rgba(4, 0, 255, 0.25);
+    border-radius: 70px;
+    box-shadow: 0 10px 30px rgb(0, 255, 242);
+    text-align: center;
+    font-size: clamp(14px, 0.9vw + 8px, 18px);
+    font-weight: 400;
+    line-height: 1.6;
+    cursor: default;
+    position: relative;
+}
+
+.contact li {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+}
+
+.contact p {
+    margin-top: 80px;
+}
+
+.icon {
+    font-size: 34px;
+}
+
+
 
 
 
