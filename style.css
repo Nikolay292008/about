@@ -766,6 +766,10 @@ footer ul li a:hover:before {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .cards_contacts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .cards_grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
@@ -804,6 +808,10 @@ footer ul li a:hover:before {
         "card2"
         "card4"
         "card5";
+    }
+
+    .cards_contacts {
+        grid-template-columns: 1fr;
     }
 
     .menu-wrap .hamburger {
